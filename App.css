@@ -1,0 +1,119 @@
+body{
+  box-sizing:border-box;
+  background:linear-gradient(100deg,indigo,purple);
+  
+}
+
+.container{ 
+  width:400px;
+  min-height:100px;
+  /* text-align:center; */
+  border:black solid 4px;
+  background:linear-gradient(100deg,red,orange);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  position:absolute;
+  left:50%;
+  top:40%;
+  transform:translate(-50%,-50%);
+  border-radius:10%
+  
+}
+img{
+  vertical-align: middle;
+  margin-right:10px;
+}
+p{
+  align-self:flex-start;
+
+  margin-left:15px;
+  padding:10px;
+  
+}
+.box{
+  /* width:100%; */
+  /* max-width:540px; */
+  /* background:#fff; */
+  
+  padding:20px 30px 20px 10px 
+}
+#add{
+  border-radius:20%;
+  background:grey;
+  color:black;
+  margin-left:5px;
+}
+ul {
+  align-self:flex-start;
+  list-style:none;
+  cursor:pointer;
+  user-select:none;
+position:relative;
+margin-bottom: 10px;
+min-width:300px;
+margin-left:20px;
+
+}
+li{
+  position:relative;
+  margin:10px;
+}
+
+ul li::before{
+  content:'';
+  position:absolute;
+  height:24px;
+  width:24px;
+  /* border:black; */
+  border-radius:50%;
+  background-image:url(unchecked-checkbox-icon-10.jpg);
+  background-size: cover;
+  background-position: center;
+  vertical-align:middle;
+  transform:translateX(-115%);
+  /* right:55px; */
+  
+  
+  
+  
+}
+ul li.checked{
+  position:relative;
+  margin:10px;
+  text-decoration:line-through;
+  
+}
+ul li.checked::before{
+  background-image:url(checked.jpg);
+  vertical-align:middle;
+  margin-bottom:2px;
+
+}
+
+ ul li span {
+  position:absolute;
+  right:0px;
+  border-radius:50%;
+  width:25px;
+  right:25px;
+  text-align:center;
+  }
+  ul li span:hover{
+    background: grey;
+  }
+
+
+
+
+  /* // tasklist.addEventListener("click",function(e){
+    //   if(e.target.tagName==="LI"){
+    //     e.target.classList.toggle("checked");
+      
+    //   }
+    //   else if(e.target.tagName==="SPAN"){
+    //     e.target.parentElement.remove()
+    //   }
+    // }) */
+
